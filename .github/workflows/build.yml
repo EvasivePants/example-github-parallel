@@ -1,0 +1,13 @@
+name: Build
+
+jobs:
+  build:
+    # [..]
+
+  test:
+    needs: build
+    # [..]
+
+  deploy:
+    needs: test
+    # [..]
